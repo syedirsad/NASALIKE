@@ -36,7 +36,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, setView, isMenuOpe
     ];
 
     return (
-        <nav className="glass-nav sticky top-[80px] sm:top-[84px] z-40">
+        <nav className="glass-nav z-40">
             {/* Desktop Navigation */}
             <div className="max-w-[1400px] mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="hidden sm:flex justify-around sm:justify-start py-2 space-x-0 sm:space-x-2">
