@@ -39,7 +39,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, setView, isMenuOpe
         <nav className="glass-nav z-40">
             {/* Desktop Navigation */}
             <div className="max-w-[1400px] mx-auto px-2 sm:px-6 lg:px-8">
-                <div className="hidden sm:flex justify-around sm:justify-start py-2 space-x-0 sm:space-x-2">
+                <div className="hidden sm:flex items-center justify-start py-2 space-x-2">
                     {navLinks.map((link) => (
                         <NavItem 
                             key={link.view}
@@ -49,6 +49,16 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, setView, isMenuOpe
                             onClick={() => setView(link.view)} 
                         />
                     ))}
+                    <a
+                        href="http://npgapp.akamai.net.in"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center justify-center gap-2 px-5 py-2.5 rounded-full font-semibold transition-all duration-300 transform btn-glossy active ml-auto hover:scale-105"
+                        style={{ background: 'linear-gradient(to right, #4ade80, #2dd4bf)', border: 'none' }}
+                    >
+                        <i className="fas fa-shopping-cart"></i>
+                        <span className="text-sm sm:text-base">Purchase Course</span>
+                    </a>
                 </div>
             </div>
 
@@ -70,6 +80,15 @@ const Navigation: React.FC<NavigationProps> = ({ currentView, setView, isMenuOpe
                                 <span>{link.label}</span>
                             </button>
                         ))}
+                        <a
+                            href="http://npgapp.akamai.net.in"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="w-full flex items-center gap-3 px-4 py-3 rounded-md font-medium text-left transition-colors duration-200 bg-gradient-to-r from-green-500 to-teal-500 text-white shadow-md mt-2"
+                        >
+                            <i className="fas fa-shopping-cart w-5 text-center"></i>
+                            <span>Purchase Course</span>
+                        </a>
                     </div>
                 </div>
             )}
